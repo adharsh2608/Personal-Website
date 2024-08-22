@@ -1,6 +1,5 @@
-import { Component } from '@angular/core';
-import { Contents_User} from '../dummy-content';
-const randomIndex=Math.floor(Math.random()* Contents_User.length)
+import { Component,Input } from '@angular/core';
+
 @Component({
   selector: 'app-user',
   standalone: true,
@@ -9,5 +8,10 @@ const randomIndex=Math.floor(Math.random()* Contents_User.length)
   styleUrl: './user.component.css'
 })
 export class UserComponent {
-selectedContent = Contents_User[randomIndex];
+  @Input() name!: string;
+
+onSelectContent()
+{
+ 
+}
 }
