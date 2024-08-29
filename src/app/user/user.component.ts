@@ -1,4 +1,4 @@
-import { Component,Input } from '@angular/core';
+import { Component,Input ,Output, EventEmitter} from '@angular/core';
 
 @Component({
   selector: 'app-user',
@@ -8,10 +8,12 @@ import { Component,Input } from '@angular/core';
   styleUrl: './user.component.css'
 })
 export class UserComponent {
-  @Input() name!: string;
-
+  @Input({required:true}) id!: string;
+ @Input({required:true}) name!: string;
+//name=input<string>();
+@Output() select=new  EventEmitter();
 onSelectContent()
 {
- 
+ this.select.emit(this.id);
 }
 }

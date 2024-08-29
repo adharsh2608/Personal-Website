@@ -2,19 +2,19 @@
 <main>
     <ul id="users">
         <li>
-            <app-user [name]="users[0].name"/>
+            <app-user [id]="users2[0].id" [name]="users2[0].name" (select)="OnSelectedContent($event)"/>
         </li>
         <li>
-            <app-user [name]="users[1].name"/>
+            <app-user [id]="users2[1].id" [name]="users2[1].name" (select)="OnSelectedContent($event)"/>
         </li>
         <li>
-            <app-user [name]="users[2].name"/>
+            <app-user [id]="users2[2].id" [name]="users2[2].name" (select)="OnSelectedContent($event)"/>
         </li>
         <li>
-            <app-user [name]="users[3].name"/>
+            <app-user [id]="users2[3].id" [name]="users2[3].name" (select)="OnSelectedContent($event)"/>
         </li>
         <li>
-            <app-user [name]="users[4].name"/>
+            <app-user [id]="users2[4].id" [name]="users2[4].name" (select)="OnSelectedContent($event)"/>
         </li>
     </ul>
 </main>

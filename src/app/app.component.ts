@@ -10,5 +10,10 @@ import { Contents_User } from './dummy-content';
   styleUrl: './app.component.css',
 })
 export class AppComponent {
-  users= Contents_User;
+  users2= Contents_User;
+  
+  OnSelectedContent(id: string)
+  {
+    console.log('Selected user with id: '+id);
+  }
 }
